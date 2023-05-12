@@ -4,7 +4,7 @@
 
 ## Экраны.
 
-| ![](./assets/machine_fragment.png) | ![](/assets/delivery_fragment.png) |
+| ![Главный экран](/assets/machine_fragment.png) | ![Экран настройки ресурсов](/assets/delivery_fragment.png) |
 |:-------------------------------|--------------------------------:|
 | Экран кофемашины               |       Экран добавления ресурсов |
 
