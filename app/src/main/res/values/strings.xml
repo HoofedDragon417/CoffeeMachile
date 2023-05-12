@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CoffeeMachile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="machine_fragment">Machine Fragment</string>
+    <string name="delivery_fragment">Delivery fragment</string>
+
+    <string name="beans">Beans: %d</string>
+    <string name="milk">Milk: %d</string>
+    <string name="water">Water: %d</string>
+    <string name="cash">Cash: %d</string>
+    <string name="coffee_maker">Coffee Maker</string>
+    <string name="espresso">Espresso</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="put_money_here">Put money here</string>
+    <string name="resources">Resources</string>
+    <string name="put_milk">Put milk</string>
+    <string name="put_water">Put water</string>
+    <string name="put_beans">Put beans</string>
+</resources>

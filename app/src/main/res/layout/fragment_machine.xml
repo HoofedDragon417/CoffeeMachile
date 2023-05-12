@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.machine.MachineFragment">
+
+    <LinearLayout
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cddc39"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_beans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beans"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/milk"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="#ebf1b0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_coffee_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/coffee_maker"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_cash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/cash"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tt">
+
+        <RadioButton
+            android:id="@+id/rb_espresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/espresso" />
+
+        <RadioButton
+            android:id="@+id/rb_cappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cappuccino" />
+    </RadioGroup>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_make_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/radio_group"
+        app:srcCompat="@drawable/baseline_play_arrow_24"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cash_container"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group"
+        android:layout_marginStart="20dp"
+        android:hint="@string/put_money_here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_cash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_remove_money"
+        app:layout_constraintEnd_toStartOf="@+id/fab_remove_money"
+        app:layout_constraintTop_toTopOf="@+id/fab_remove_money"
+        app:srcCompat="@drawable/baseline_monetization_on_24"
+        tools:ignore="ContentDescription" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_remove_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cash_container"
+        android:layout_alignBottom="@+id/cash_container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/cash_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cash_container"
+        app:srcCompat="@drawable/baseline_money_off_24"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_coffee"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_resources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
