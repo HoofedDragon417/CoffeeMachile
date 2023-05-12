@@ -4,7 +4,7 @@
 
 ## Экраны.
 
-| ![](https://github.com/HoofedDragon417/CoffeeMachile/tree/master/app/src/main/assets/machine_fragment.png) | ![](https://github.com/HoofedDragon417/CoffeeMachile/tree/master/app/src/main/assets/delivery_fragment.png) |
+| ![](/assets/machine_fragment.png) | ![](/assets/delivery_fragment.png) |
 |:-------------------------------|--------------------------------:|
 | Экран кофемашины               |       Экран добавления ресурсов |
 
