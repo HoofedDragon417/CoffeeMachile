@@ -4,7 +4,7 @@
 
 ## Экраны.
 
-| ![](app/src/main/assets/machine_fragment.png) | ![](/assets/delivery_fragment.png) |
+| ![](app/src/main/assets/machine_fragment.png) | ![](app/src/main/assets/delivery_fragment.png) |
 |:-------------------------------|--------------------------------:|
 | Экран кофемашины               |       Экран добавления ресурсов |
 
@@ -12,14 +12,14 @@
 
 ### Добавление ресурсов.
 
-![](../assets/delivery_fragment_actions.gif)
+![](app/src/main/assets/delivery_fragment_actions.gif)
 
 При попытке добавить пустые поля ресурсов, ничего не будет происходить. Если же хоть в одном поле
 будет какое-нибудь значение, то к этому ресурсу добавятся значения поля этого ресурса.
 
 ### Работа кофемашины.
 
-![](/assets/machine_fragment_action.gif)
+![](app/src/main/assets/machine_fragment_action.gif)
 
 Если не выбрать тип кофе, который хочет сварить пользователь, покажется предупреждение. После выбора
 кофе и начала работы кофемашины, будет показываться состояние приготовления кофе.
